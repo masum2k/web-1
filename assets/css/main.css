@@ -1,0 +1,191 @@
+@font-face {
+    font-family: font_1;
+    src: url(../fonts/PlaywriteNL-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: font_2;
+    src: url(../fonts/PlaywriteNL-ExtraLight.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: font_3;
+    src: url(../fonts/PlaywriteNL-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: font_4;
+    src: url(../fonts/PlaywriteNL-Regular.ttf);
+    font-weight: 400;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+h2{
+    margin:0;   
+    text-align: center; 
+}
+a{
+    text-decoration: none;
+}
+main{
+    height: 100%;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    margin-top: 46px;
+}
+.menu ul {
+    font-family: font_3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul li{
+    list-style:none;
+    margin: 0;
+}
+.menu ul li a {
+    
+    color: rgb(77, 66, 66);
+    font-size: 24px;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+section{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-main{
+    background-image: url("../images/1.jpg");   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-main h1{
+    margin: 0;
+    font-size: 96px;
+    font-weight: 700;
+    font-family: serif;
+}
+.section-main .hero{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+.section-main .hero-sub{
+    font-weight: 300;
+    font-size: 24px;
+    max-width: 720px;
+    
+}
+.section-main .hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 124px;
+    height: 42px;
+
+    
+    font-size: 24px;
+    color: white;
+    background: rgb(34, 117, 13);
+    border-radius:20px;
+    font-family:serif
+    
+}
+.section-main .hero-button:hover{
+    background-color: rgb(11, 160, 43);
+}
+.section-gallery{
+    background-image: url("../images/2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.section-about{
+    background-image: url("../images/3.jpg");
+}
+.card {
+    width: 320px;
+    padding:24px;
+    background: rgba(88,88,88,0.5);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+.card .card-title{
+    font-size: 32px;
+}
+.card .card-desc{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.card .read-more{
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(78, 78, 78,0.45);
+    color: white;
+    align-self: flex-end;
+}
+.card-image{
+    padding-bottom: 10px;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;   
+    justify-content: center;
+}
+.section-about .div-1{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-about .about1-text{
+    font-size: 20px;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    max-width: 760px;
+    align-items: flex-end;
+    
+}
+.section-about .about2-text{
+    font-size: 20px;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    max-width: 760px;
+    align-items: flex-start;
+    
+}
